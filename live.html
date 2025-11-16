@@ -9,33 +9,33 @@
 
 <style>
   body {
-    background-color: #f8fafc; /* Nền xám rất nhạt */
+    background-color: #f8fafc; 
     min-height: 100vh;
-    padding-top: 2.5rem; /* Thêm khoảng cách ở trên */
+    padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
   
-  /* Thiết kế lại trình phát video */
+
   #live-player {
     width: 100%;
-    height: auto; /* Tự động co giãn chiều cao */
-    aspect-ratio: 16 / 9; /* Giữ tỷ lệ 16:9 */
-    border-radius: 0.5rem; /* Bo góc */
+    height: auto; 
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem; 
     background: #000;
   }
 
-  /* Nút bấm quay lại */
+
   .btn-back {
     position: absolute;
     top: 1.5rem;
     left: 1.5rem;
   }
   
-  /* Bọc trình phát trong 1 card cho đẹp */
+
   .player-card {
-    border: none; /* Bỏ viền card */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); /* Bóng đổ nhẹ */
-    max-width: 900px; /* Giới hạn chiều rộng tối đa */
+    border: none; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); 
+    max-width: 900px; 
   }
 </style>
 </head>
@@ -70,7 +70,7 @@
 
 <script>
   const player = document.getElementById('live-player');
-  const url = '/live/stream.m3u8'; // Giữ nguyên đường dẫn của bạn
+  const url = '/live/stream.m3u8'; // Thay URL
 
   if (Hls.isSupported()) {
     const hls = new Hls();

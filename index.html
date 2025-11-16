@@ -17,37 +17,35 @@ body {
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
-  font-family: 'Inter', sans-serif; /* Thêm font chữ đẹp hơn */
+  font-family: 'Inter', sans-serif;
 }
-
-/* ----- PHẦN CSS TÙY CHỈNH ĐỂ LÀM ĐẸP ----- */
 
 /* 1. Thiết kế thẻ "Kính mờ" (Glassmorphism) */
 .main-card { 
-  background: rgba(25, 25, 25, 0.45); /* Nền đen mờ 45% */
-  backdrop-filter: blur(10px); /* Hiệu ứng mờ nền phía sau */
-  -webkit-backdrop-filter: blur(10px); /* Hỗ trợ trình duyệt Safari */
+  background: rgba(25, 25, 25, 0.45); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
   
-  border-radius: 1.25rem; /* Bo góc mạnh hơn */
-  padding: 3rem; /* Tăng không gian bên trong */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Đổ bóng */
-  border: 1px solid rgba(255, 255, 255, 0.18); /* Viền trắng mờ */
+  border-radius: 1.25rem; 
+  padding: 3rem; 
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); 
+  border: 1px solid rgba(255, 255, 255, 0.18); 
   
   text-align: center;
-  max-width: 500px; /* Giới hạn chiều rộng */
+  max-width: 500px; 
 }
 
 /* 2. Thêm hiệu ứng cho các nút bấm */
 .btn-feature { 
   width: 200px; 
   margin: 10px; 
-  transition: all 0.2s ease-in-out; /* Hiệu ứng chuyển động mượt */
-  font-weight: 600; /* Chữ đậm hơn */
+  transition: all 0.2s ease-in-out; 
+  font-weight: 600; 
 }
 
 .btn-feature:hover {
-  transform: scale(1.05); /* Phóng to nhẹ khi rê chuột */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Thêm bóng khi rê chuột */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
 }
 
 /* 3. Đảm bảo các nút trên di động không bị tràn */
@@ -56,7 +54,7 @@ body {
     padding: 2rem;
   }
   .btn-feature {
-    width: 100%; /* Trên màn hình nhỏ, nút bấm rộng 100% */
+    width: 100%; 
     display: block;
     margin: 10px 0;
   }
